@@ -1,0 +1,174 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .container {
+    position: relative;
+    background: white;
+    max-width: auto;
+    max-height: auto;
+  }
+  
+  .atas {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+  }
+  
+  .foto {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profil {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nama {
+    color: white;
+    text-align: center;
+  }
+  
+  .bawah {
+    position: relative;
+    padding: 40px;
+    /* background: black; */
+  }
+  
+  .kontenSaya {
+    display: flex;
+    text-align: center;
+  }
+  
+  .tentangSaya {
+    background: #003147;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .keterangan {
+    width: 300px;
+    height: 150px;
+    background-color: #003147;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .video {
+    border: 10px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .pengalaman {
+    background: #003147;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .tabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003147;
+  }
+  
+  .hubungiSaya {
+    background: #003147;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .hubungii {
+    padding: 20px;
+    background: #003147;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .footer {
+    background: #49c549;
+    text-align: center;
+    margin: 0;
+    height: 50px;
+  }
+  
+  @media (max-width: 696px) {
+    .tentangSaya,
+    .pengalaman,
+    .hubungiSaya {
+      width: 100%;
+    }
+  
+    .kontenSaya {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .keterangan {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .video {
+      width: 90%;
+    }
+  }
+  
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .dark-mode .header {
+    background: rgb(9, 0, 15);
+    color: #fff;
+  }
+  .toggle input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
